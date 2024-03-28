@@ -25,10 +25,6 @@ namespace eBay.ApiClient.Auth.OAuth2
     public static class Constants
     {
         //Config
-        public static readonly String DEV_ID = "devid";
-        public static readonly String APP_ID = "appid";
-        public static readonly String CERT_ID = "certid";
-        public static readonly String REDIRECT_URI = "redirecturi";
         public static readonly String CREDENTIAL_DELIMITER = ":";
 
         //API request headers
@@ -51,7 +47,5 @@ namespace eBay.ApiClient.Auth.OAuth2
         public static readonly String PAYLOAD_VALUE_REFRESH_TOKEN = "refresh_token";
         public static readonly String PAYLOAD_PARAM_DELIMITER = "&";
         public static readonly String PAYLOAD_VALUE_DELIMITER = "=";
-
-
     }
 }

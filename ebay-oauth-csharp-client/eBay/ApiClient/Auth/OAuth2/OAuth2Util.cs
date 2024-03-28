@@ -20,6 +20,7 @@ using System;
 using System.Text;
 using System.Collections.Generic;
 using eBay.ApiClient.Auth.OAuth2.Model;
+using eBay.ApiClient.Auth.oAuth2.Model;
 
 namespace eBay.ApiClient.Auth.OAuth2
 {
@@ -44,10 +45,10 @@ namespace eBay.ApiClient.Auth.OAuth2
         /*
          * Create Base64 encoded Authorization header value
          */
-        public static String CreateAuthorizationHeader(CredentialUtil.Credentials credentials) {
+        public static String CreateAuthorizationHeader(EbayCredentials eBayCredentials) {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(credentials.Get(CredentialType.APP_ID)).Append(Constants.CREDENTIAL_DELIMITER);
-            stringBuilder.Append(credentials.Get(CredentialType.CERT_ID));
+            stringBuilder.Append(eBayCredentials.AppId).Append(Constants.CREDENTIAL_DELIMITER);
+            stringBuilder.Append(eBayCredentials.CertId);
             var plainTextBytes = Encoding.UTF8.GetBytes(stringBuilder.ToString());
             string encodedText = Convert.ToBase64String(plainTextBytes);
             return Constants.HEADER_PREFIX_BASIC + encodedText;
