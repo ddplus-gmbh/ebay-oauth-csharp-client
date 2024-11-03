@@ -19,7 +19,6 @@
 using System;
 using System.Text;
 using System.Collections.Generic;
-using eBay.ApiClient.Auth.OAuth2.Model;
 using eBay.ApiClient.Auth.oAuth2.Model;
 
 namespace eBay.ApiClient.Auth.OAuth2

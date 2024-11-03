@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ebay-oauth-csharp-client", "ebay-oauth-csharp-client\ebay-oauth-csharp-client.csproj", "{04329FBF-3731-44F9-814A-2176021C8F3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ddplus eBay OAuth Client", "ebay-oauth-csharp-client\ddplus eBay OAuth Client.csproj", "{04329FBF-3731-44F9-814A-2176021C8F3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
